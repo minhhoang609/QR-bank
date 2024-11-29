@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Payment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Chuyển tiền nhanh</h1>
+    <div id="qrcode"></div>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://example.com/payment?account=888881609204&name=PHAM%20HOANG%20MINH",
+            width: 128,
+            height: 128,
+        });
+    </script>
+</body>
+</html>
